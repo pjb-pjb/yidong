@@ -1,0 +1,206 @@
+@import url("base.css");
+.bar{
+	width: 1200px;
+	margin: 0 auto;
+	height: 398px;
+}
+.bar .aside{
+	float: left;
+	width: 235px;
+	height: 398px;
+	background: #fff;
+}
+.bar .aside1{
+	width: 100%;
+	height: 100%;
+}
+.bar .aside1 li{
+	width: 233px;
+	height: 52px;
+	border: 1px solid #fff;
+	background: #fff url(../img/bar/bar4.png) no-repeat 195px center;
+}
+.bar .aside1 li a{
+	display: flex;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	padding-left: 31px;
+	font-size: 16px;
+	line-height: 50px;
+	color: #333;
+	
+}
+.bar .small{
+	position: relative;
+	width: 705px;
+	height: 398px;
+	float: left;
+	overflow: hidden;
+}
+.bar .big{
+	height: 100%;
+	width: 1000%;
+}
+.bar .big li img{
+	display: block;
+	width: 705px;
+	height: 398px;
+}
+.bar .yuan{
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	display: flex;
+	justify-content: center;
+	bottom: 10px;
+	/*cursor: hand;*/
+}
+.bar .yuan li{
+	width: 10px;
+	height: 10px;
+	background: rgba(0,0,0,.6);
+	border-radius: 50%;
+	margin-right: 10px;
+	cursor: pointer;	
+}
+.bar .yuan .color{
+	background: rgba(228, 0, 120, 1);
+}
+.bar .btn{
+	position: absolute;
+	width: 34px;
+	height: 69px;
+	top: 40%;
+	opacity: 1;
+}
+.bar .btn-left{
+	left: 0;
+	background: url(../img/bar/bar-btn-left.png) no-repeat;
+}
+.bar .btn-right{
+	right: 0;
+	background: url(../img/bar/bar-btn-right.png) no-repeat;
+}
+.bar .info{
+	float: left;
+	width: 260px;
+	height: 398px;
+	background: #fff;
+}
+.bar .info1{
+	width: 258px;
+	margin: 0 auto;
+	padding: 30px 0 0;
+	overflow: hidden;
+}
+.bar .info1 li{
+	position: relative;
+	height: 74px;
+	font-size: 12px;
+	color: #333;
+	float: left;
+	width: 86px;
+	text-align: center;
+} 
+.bar .info1 li img{
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+}
+.bar .info1 li span{
+	color: #333;
+	display: block;
+	width: 86px;
+}
+.bar .info1 li .huodong{
+	width: 21px;
+	height: 21px;
+	font-size: 14px;
+	line-height: 21px;
+	background: #e40077;
+	border-radius: 50%;
+	color: #fff;
+	position: absolute;
+	top: -12px;
+	right: 18px;
+	text-align: center;
+}
+.bar .price{
+	width: 230px;
+	margin: 0 auto;
+	padding-top: 20px;
+	border-top:1px dotted #c2c2c2;
+	overflow: hidden;
+}
+.bar .xuanxiang{
+	overflow: hidden;
+}
+.bar .xuanxiang span{
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 0 0 5px;
+	margin: 0 15px;
+	font-size: 14px;
+	line-height: 14px;
+	color: #222;
+}
+.bar .xuanxiang .color{
+	border-bottom: 2px solid #3eb4fa;
+	color: #3eb4fa;
+}
+.bar .price input{
+	width: 208px;
+	height: 33px;
+	padding: 0 10px;
+	font-size: 12px;
+	line-height: 33px;
+	border: 1px solid #dadada;
+	color: #dadada;
+	margin-top: 13px;
+	outline: none;
+}
+.bar .price-1{
+	overflow: hidden;
+	width: 240px;
+	height: auto;
+	padding: 10px 0;
+	text-align: center;
+}
+.bar .price-1 li{
+	cursor: pointer;
+	border: 1px solid #DADADA;
+	color: #DADADA;
+	background: #FFFFFF;
+	float: left;
+	line-height: 32px;
+	width: 37px;
+	height: 32px;
+	border-radius: 3px;
+	font-size: 12px;
+	margin-right: 8px;
+}
+.bar .price-1 .color{
+	border-color: #e30077;
+	background: #e30077;
+	color: #fff;
+}
+.bar .price-btn{
+	width: 230px;
+	margin: 0 auto;
+	padding-top: 12px;
+}
+.bar .price-btn1{
+	cursor: pointer;
+	float: right;
+	width: 129px;
+	height: 34px;
+	font-size: 14px;
+	line-height: 34px;
+	border-radius: 2px;
+	text-align: center;
+	color: #fff;
+	background: #34b4fa;
+}

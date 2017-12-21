@@ -1,0 +1,82 @@
+@import url("base.css");
+.yh{
+	width: 1200px;
+	margin: 20px auto 0;
+	height: 170px;
+}
+.yh .title{
+	float: left;
+	width: 235px;
+	height: 170px;
+}
+.yh .title img{
+	display: block;
+	width: 235px;
+	height: 170px;
+}
+.yh .small{
+	float: right;
+	width: 960px;
+	height: 170px;
+	overflow: hidden;
+	position: relative;
+}
+.yh .big{
+	position: relative;
+	width: 3388px;
+	height: 170px;
+}
+.yh .big li{
+	position: relative;
+	float: left;
+	width: 235px;
+	height: 170px;
+	margin-right: 7px;
+	background: #f4f4f4;
+}
+.yh .big li a{
+	color: #666;
+}
+.yh .big li h3{
+	width: 215px;
+	padding: 13px 10px 0;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	color: #222222;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.yh .big li p{
+	width: 215px;
+	padding: 6px 10px 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #808080;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.yh .big li img{
+	width: 120px;
+	height: 100px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.yh .btn{
+	position: absolute;
+	top: 70px;
+	height: 35px;
+	width: 28px;
+	cursor: pointer;
+}
+.yh .btn-left{
+	 background: url(../img/yh/yh-btn-right.png) no-repeat;
+	 left: 0;
+}
+.yh .btn-right{
+	 background: url(../img/yh/yh-btn-left.png) no-repeat;
+	 right: 0;
+}

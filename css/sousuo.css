@@ -1,0 +1,121 @@
+@import url("base.css");
+.sousuo{
+	width: 1200px;
+	height: 88px;
+	margin: 0 auto;
+}
+.sousuo .left{
+	float: left;
+	height: 100%;
+}
+.sousuo .left a{
+	float: left;
+}
+.sousuo .left img{
+	width: 230px;
+	height: auto;
+	margin: 20px 0 0 0;
+}
+.sousuo .left .address{
+	float: left;
+	margin: 40px 0 0 35px;
+	position: relative;
+	cursor: pointer;
+	height: 18px;
+	padding: 0 15px 0 0;
+	font-size: 16px;
+	line-height: 18px;
+	background: url(../img/sousuo/sousuo3.png) no-repeat right center;
+}
+.sousuo .right{
+	float: right;
+	margin-top: 12px;
+	box-sizing: border-box;
+	width: 500px;
+	height: 68px;
+}
+.sousuo .mian{
+	position: relative;
+	padding-top: 10px;
+	border: 1px solid transparent;
+	width: 100%;
+	box-sizing: border-box;
+	background: url(../img/sousuo/sousuo2.png) no-repeat left center/100% auto;
+	height: 46px;
+}
+.sousuo input:first-of-type{
+	background: none;
+	width: 100%;
+	outline: none;
+	height: 34px;
+	line-height: 34px;
+	font-size: 12px;
+	box-sizing: border-box;
+	color: rgb(102,102,102);
+	padding: 3px 12px;
+	border: none;
+}
+.sousuo input:last-of-type{
+	position: absolute;
+	width: 80px;
+	height: 36px;
+	right: 15px;
+	top: 10px;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+}
+.sou-nav{
+	box-sizing: border-box;
+	padding-top: 5px;
+	overflow: hidden;
+}
+.sou-nav li{
+	float: left;
+	color: #333;
+	padding: 0 20px 0 0;
+	/*transition: all 0.2s ease;*/
+}
+.sou-nav li a{
+	display: block;
+	color: #333;
+	font-size: 12px;	
+}
+.sou-nav li:nth-of-type(2n-1) a{
+	color: #e40077;
+}
+.nav{
+	width: 1200px;
+	height: 47px;
+	margin: 0 auto;
+	border-bottom: 1px solid #3eb4fa;
+}
+.nav h1{
+	float: left;
+	width: 235px;
+	height: 47px;
+	font: 17px/47px "微软雅黑";
+	/*font-weight: bold;*/
+	text-align: center;
+	color: #fff;
+	background: #3eb4fa;
+}
+.nav1{
+	float: left;
+	height: 47px;
+	padding-left: 29px;
+}
+.nav1 li{
+	float: left;
+	padding: 0 29px;
+	font-size: 16px;
+	line-height: 47px;
+}
+.nav1 li a{
+	color: #222222;
+}
+.nav1 li .color{
+	color:#3eb4fa;
+}
