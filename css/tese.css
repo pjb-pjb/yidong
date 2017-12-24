@@ -1,0 +1,152 @@
+@import url("base.css");
+.tese{
+	width: 1200px;
+	margin: 0 auto;
+}
+.tese>h2{
+	padding: 40px 0 30px;
+	margin: 0 auto;
+	font-size: 22px;
+	line-height: 22px;
+	color: #222222;
+}
+.tese dl{
+	float: left;
+	width: 299px;
+	height: 80px;
+	padding-bottom: 40px;
+	display: flex;
+	align-items: center;
+}
+.tese dt{
+	width: 80px;
+	height: 80px;
+}
+.tese dt img{
+	width: 80px;
+	height: 80px;
+}
+.tese dd{
+	width: 199px;
+	padding-left: 20px;
+}
+.tese dd h4{
+	width: 100%;
+	padding-top: 15px;
+	font-size: 18px;
+	line-height: 18px;
+	color: #222222;
+}
+.tese dd p{
+	width: 100%;
+	padding-top: 11px;
+	font-size: 14px;
+	line-height: 14px;
+	color: #808080;
+}
+.gonggao{
+	width: 1198px;
+	border: 1px solid #DFDFDF;
+	margin: 10px auto 0;
+	font-size: 14px;
+	line-height: 38px;
+	overflow: hidden;
+	height: 38px;
+}
+.gonggao span{
+	display: block;
+	float: left;
+	width: 50px;
+	padding-left: 50px;
+	background: url(../img/tese/indexgg.gif) no-repeat 20px center;
+	color: #666;
+}
+.gonggao ul{
+	float: left;
+	width: 1000px;
+}
+.gonggao ul li{
+	float: left;
+	width: 470px;
+	padding: 0 10px 0 20px;
+	background: url(../img/tese/indexgg.png) no-repeat 5px center;
+}
+.gonggao ul a{
+	float: left;
+    display: block;
+    width: 330px;
+    color: #3eb4fa;
+    font-size: 14px;
+    line-height: 38px;
+}
+.gonggao ul em{
+	float:left;
+	display:block;
+	width:130px;
+	padding-left:10px;
+	font-size: 14px;
+	line-height: 38px;
+	color:#d5cccc;
+}
+.gonggao .btn{
+	cursor: pointer;
+	float: right;
+	padding: 0 20px 0 0;
+}
+.gonggao .btn i{
+	float: left;
+    width: 22px;
+    height: 38px;
+    font: bold 15px/38px "宋体";
+    color: #3580ba;
+}
+.dongtai{
+	width: 1198px;
+	margin: 10px auto 0;
+	padding-bottom: 18px;
+	border:1px solid #dfdfdf;
+	overflow: hidden;
+}
+.dongtai .more{
+	text-align: right;
+	padding-top: 6px;
+}
+.dongtai .more a{
+	padding: 0 15px 0 0;
+	color: #666;
+	font-size: 12px;
+	line-height: 12px;
+}
+.dongtai img{
+	float: left;
+	display: block;
+	padding: 7px 20px 0 23px;
+	width: 43px;
+	height: 43px;
+}
+.dongtai ul{
+	float: left;
+	width: 1000px;
+}
+.dongtai li{
+	float: left;
+	width: 470px;
+	padding: 0 10px 0 20px;
+	font-size: 14px;
+	line-height: 28px;
+}
+.dongtai li span{
+	float: left;
+	width: 10px;
+}
+.dongtai li a{
+	float: left;
+    width: 330px;
+    color: #666666;
+}
+.dongtai li em{
+	float: left;
+    width: 120px;
+    padding-left: 10px;
+    color: #d5cccc;
+}

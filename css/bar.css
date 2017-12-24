@@ -172,7 +172,7 @@
 .bar .price-1 li{
 	cursor: pointer;
 	border: 1px solid #DADADA;
-	color: #DADADA;
+	color: #666;
 	background: #FFFFFF;
 	float: left;
 	line-height: 32px;

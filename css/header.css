@@ -38,7 +38,9 @@ body{
 	justify-content: flex-end;
 	align-items: center;
 }
-
+.head1 .right a{
+	color: #808080;
+}
 .head1 li{
 	margin: 0 17px;
 }
