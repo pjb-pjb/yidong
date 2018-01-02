@@ -244,6 +244,10 @@ h4{
 	background: #fff;
 	position: relative;
 }
+.f4 .main li:hover{
+	background: #F5F5F5;
+	transition: .25s;
+}
 .f4 .main li:last-of-type{
 	border-bottom: none;
 }

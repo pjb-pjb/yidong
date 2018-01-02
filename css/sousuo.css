@@ -86,6 +86,10 @@
 .sou-nav li:nth-of-type(2n-1) a{
 	color: #e40077;
 }
+.sou-nav li a:hover{
+	color: #3EB4FA;
+	transition: all .25s; 
+}
 .nav{
 	width: 1200px;
 	height: 47px;
@@ -115,6 +119,10 @@
 }
 .nav1 li a{
 	color: #222222;
+}
+.nav1 li:hover a{
+	color: #3EB4FA;
+	transition: all .25s;
 }
 .nav1 li .color{
 	color:#3eb4fa;

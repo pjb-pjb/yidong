@@ -22,6 +22,7 @@
 	position: relative;
 }
 .yh .big{
+	transition: all 1s;
 	position: relative;
 	width: 3388px;
 	height: 170px;

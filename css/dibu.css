@@ -20,6 +20,11 @@
 	font-size: 15px;
 	line-height: 180%;
 	color: #666;
+	transition: .25s;
+}
+.dblj a:hover{
+	color: #3EB4FA;
+	t
 }
 .db{
 	width: 100%;
@@ -33,6 +38,11 @@
 }
 .db a{
 	color: #666;
+}
+.db a:hover{
+	text-decoration: underline;
+	color: #3EB4FA;
+	transition: .25s;
 }
 .db3{
 	padding-top: 4px;

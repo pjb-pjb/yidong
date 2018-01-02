@@ -39,7 +39,12 @@ body{
 	align-items: center;
 }
 .head1 .right a{
+	display: block;
 	color: #808080;
+}
+.head1 .right li:hover a{
+	color: #3EB4FA;
+	transition: all .25s;
 }
 .head1 li{
 	margin: 0 17px;
@@ -49,6 +54,9 @@ body{
 	margin: 0;
 }
 .head1 li:nth-of-type(2) a{
+	border-left: 1px solid #F5F5F5;
+	border-right: 1px solid #F5F5F5;
+	box-sizing: border-box;
 	display: block;
 	line-height: 30px;
 	color: #808080;
@@ -56,4 +64,35 @@ body{
 	width: 120px;
 	text-align: center;
 	background: url(../img/head.png) no-repeat center center;
+}
+.head1 li:nth-of-type(2):hover a{
+	transition: all 0s;
+	box-sizing: border-box;
+	border-left: 1px solid #DFDDDE;
+	border-right: 1px solid #DFDDDE;
+	background-color: #FFFFFF;	
+}
+.head1 li:nth-of-type(2):hover .code-img{
+	display: block;
+	border-top: none;
+}
+.code-img{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 160px;
+	height: 160px;
+	border: 1px solid #dfddde;
+	background: #fff;
+	z-index: 10;
+}
+.code-img img{
+	margin: 20px auto 0;
+	display: block;
+}
+.code-img p{
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
 }

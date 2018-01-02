@@ -20,6 +20,16 @@
 	border: 1px solid #fff;
 	background: #fff url(../img/bar/bar4.png) no-repeat 195px center;
 }
+.bar .aside1 li:hover{
+	background: #fff url(../img/bar/bar5.jpg) no-repeat 195px center;
+	border-top: 1px solid #3EB4FA;
+	border-bottom: 1px solid #3EB4FA;
+	border-left: 1px solid #3EB4FA;
+}
+.bar .aside1 li:hover a{
+	color: #3EB4FA;
+	transition: .25s;
+}
 .bar .aside1 li a{
 	display: flex;
 	align-items: center;
@@ -38,9 +48,22 @@
 	float: left;
 	overflow: hidden;
 }
+.bar .small:hover .btn{
+	display: block;
+}
+.bar .small .btn:hover{
+	opacity: .8;
+}
 .bar .big{
 	height: 100%;
-	width: 1000%;
+	width: 100%;
+}
+.bar .big li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 1.5s;
 }
 .bar .big li img{
 	display: block;
@@ -68,6 +91,8 @@
 	background: rgba(228, 0, 120, 1);
 }
 .bar .btn{
+	cursor: pointer;
+	display: none;
 	position: absolute;
 	width: 34px;
 	height: 69px;
@@ -109,10 +134,15 @@
 	height: 32px;
 	margin: 0 auto;
 }
+.bar .info1 li:hover img{
+	transition: .25s;
+	transform: scale(1.1);
+}
 .bar .info1 li span{
 	color: #333;
 	display: block;
 	width: 86px;
+	padding-top: 10px;
 }
 .bar .info1 li .huodong{
 	width: 21px;
@@ -146,6 +176,11 @@
 	font-size: 14px;
 	line-height: 14px;
 	color: #222;
+}
+.bar .xuanxiang span:hover{
+	transition: .25s;	
+	border-bottom: 2px solid #3eb4fa;
+	color: #3eb4fa;
 }
 .bar .xuanxiang .color{
 	border-bottom: 2px solid #3eb4fa;
@@ -186,6 +221,12 @@
 	border-color: #e30077;
 	background: #e30077;
 	color: #fff;
+}
+.bar .price-1 li:hover{
+	border-color: #e30077;
+	background: #e30077;
+	color: #fff;
+	transition: .25s;
 }
 .bar .price-btn{
 	width: 230px;
