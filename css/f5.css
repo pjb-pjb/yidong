@@ -98,12 +98,16 @@
 	position: relative;
 }
 .f5 .l2 .big>li{
+	display: none;
 	position: absolute;
 	left: 0;
 	padding: 20px 10px 0;
 	top: 0;
 	width: 217px;
 	height: 446px;	
+}
+.f5 .l2 .big>li:first-child{
+	display: block;
 }
 .f5 .l2 .big>li .title{
 	display: flex;
@@ -186,6 +190,7 @@
 	padding: 5px;
 }
 .f5-bar .yuan li{
+	cursor: pointer;
 	float: left;
 	width: 10px;
 	height: 10px;
@@ -226,6 +231,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	opacity: 0;
+}
+.f5-bar1>ul li:first-child{
+	opacity: 1;
 }
 .f5-bar1>ul li a{
 	float: left;
@@ -245,4 +254,18 @@
 	font-size: 14px;
 	line-height: 14px;	
 	color: #666;
+}
+.f5 .l2 .small{
+	position: relative;
+	overflow: hidden;
+	height: 390px;
+}
+.f5 .l2 .small1{
+	position: absolute;
+	top: 0;
+	left:0;
+	display: none;
+}
+.f5 .l2 .small>ul:first-child{
+	display: block;
 }
