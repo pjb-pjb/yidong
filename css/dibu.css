@@ -73,6 +73,7 @@
 	line-height: 25px;
 }
 .fixed{
+	display: none;
 	position: fixed;
 	width: 40px;
 	top: 200px;
@@ -81,6 +82,7 @@
 	z-index: 999;
 }
 .fixed li{
+	cursor: pointer;
 	width: 28px;
     height: 39px;
     padding: 0 2px;
@@ -105,23 +107,24 @@
     bottom: 0px;
     color: #ffffff;
     background: #00b0f9;
-    font: 12px/15px ""微软雅黑"";
+    font: 12px/15px "微软雅黑";
     cursor: pointer;
 }
-.fixed li:last-of-type{
-	border: none;
-}
-.fixed li:last-of-type a{
+.fixed-a{
 	display: block;
     width: 28px;
     height: 30px;
     padding: 15px 2px 9px;
     font: 12px/15px "微软雅黑";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0px;
-    bottom: 0px;
     color: #ffffff;
     background: #918888 url(../img/slidedown4.png) no-repeat center 7px;
+}
+.fixed li:hover{
+	background: #00B0F9;
+}
+.fixed li:hover span{
+	display: block;
+}
+.fixed .fixed-color{
+	display: block;
 }
