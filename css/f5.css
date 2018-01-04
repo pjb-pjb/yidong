@@ -231,10 +231,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: 0;
+	display:none;
 }
 .f5-bar1>ul li:first-child{
-	opacity: 1;
+	display:block;
 }
 .f5-bar1>ul li a{
 	float: left;
