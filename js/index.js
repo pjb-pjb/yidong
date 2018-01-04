@@ -199,7 +199,7 @@
 			}
 			span[index].classList.add("fixed-color");
 			let height=document.body.scrollTop;
-			let all=Number(f[index].offsetTop);
+			let all=Number(f[index].offsetTop)-60;
 			let yidong=all-height;
 			let sudu=yidong*30/300;
 			let time=setInterval(function(){
@@ -235,7 +235,7 @@
 		if(a==0){
 			let flag=0;
 			f.forEach(function(ele,index){
-				if(document.body.scrollTop>=ele.offsetTop){
+				if(document.body.scrollTop>=ele.offsetTop-60){
 					console.log(1);
 					aside.style.display="block";
 					for(let i=0;i<span.length;i++){
