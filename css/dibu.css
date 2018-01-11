@@ -128,3 +128,58 @@
 .fixed .fixed-color{
 	display: block;
 }
+.lf_fix1{
+	width: 40px;
+    height: 118px;
+    position: fixed;
+    right: 0px;
+    top: 290px;
+    z-index: 900;
+}
+.lf_fix2{
+	width: 100px;
+    height: auto;
+    position: fixed;
+    right: 0px;
+    top: 420px;
+    z-index: 900;
+}
+.lf_fix2 li{
+	width: 100px;
+    height: 38px;
+    margin-bottom: 1px;
+    overflow: hidden;
+}
+.lf_fix2 .logo{
+	display: block;
+    float: right;
+    width: 40px;
+    height: 38px;
+    transition: 0s;
+}
+.lf_fix2 .lg1{
+	background: #918888 url(../img/kf1.png) no-repeat center center;
+}
+.lf_fix2 .lg2{
+	background: #918888 url(../img/kf2.png) no-repeat center center;
+}
+.lf_fix2 .lg3{
+	background: #918888 url(../img/kf3.png) no-repeat center center;
+}
+.lf_fix2 .wz{
+	width: 60px;
+    height: 38px;
+    text-align: center;
+    font: bold 12px/38px "microsoft yahei";
+    color: #ffffff;
+    background: #3EB4FA;
+    overflow: hidden;
+    float: right;
+    display: none;
+}
+.lf_fix2 li:hover .wz{
+	display: block !important;
+}
+.lf_fix2 li:hover .logo{
+	background-color:#3EB4FA;
+}

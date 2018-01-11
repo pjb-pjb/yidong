@@ -9,18 +9,21 @@
 	width: 235px;
 	height: 398px;
 	background: #fff;
+	position: relative;
 }
 .bar .aside1{
 	width: 100%;
 	height: 100%;
 }
 .bar .aside1 li{
+	position: relative;
+	z-index: 99;
 	width: 233px;
 	height: 52px;
 	border: 1px solid #fff;
 	background: #fff url(../img/bar/bar4.png) no-repeat 195px center;
 }
-.bar .aside1 li:hover{
+.bar .aside1 .boder{
 	background: #fff url(../img/bar/bar5.jpg) no-repeat 195px center;
 	border-top: 1px solid #3EB4FA;
 	border-bottom: 1px solid #3EB4FA;
@@ -244,4 +247,76 @@
 	text-align: center;
 	color: #fff;
 	background: #34b4fa;
+}
+.navbox{
+	width: 963px;
+	height: 416px;
+	border: 1px solid #3eb4fa;
+	background: #fff;
+	position: absolute;
+	left: 235px;
+	top: -1px;
+	z-index: 9;
+	display: none;
+}
+.navboxLeft{
+	float: left;
+	width: 640px;
+	min-height: 396px;
+	padding: 10px 30px;
+}
+.navboxLeft dl{
+	float: left;
+	width: 640px;
+	padding: 5px 0;
+}
+.navboxLeft dt{
+	float: left;
+	width: 80px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #494949;
+	background: url(../img/bar/nav_bgli2.jpg) no-repeat 65px center;
+}
+.navboxLeft dt a{
+	color: #666;
+}
+.navboxLeft dd{
+	float: left;
+	width: 560px;
+	min-width: 30px;
+	border-bottom: 1px solid #f3f3f3;
+}
+.navboxLeft dd a{
+	display: block;
+    float: left;
+    height: 20px;
+    padding: 0 10px;
+    margin: 5px 0;
+    font: 12px/20px "microsoft yahei";
+    color: #494949;
+    border-right: 1px solid #d7d7d7;
+}
+.navboxLeft dd a:last-of-type{
+	border-right: none;
+	color: #3EB4FA;
+}
+.navboxRight{
+	float: left;
+	width: 230px;
+	height: 396px;
+	padding: 10px 30px 10px 0px;
+	background: #fff;
+}
+.navboxRight{
+	display: block;
+	margin-bottom: 20px;	
+}
+.fin{
+	animation:ani .5s linear;
+}
+@keyframes ani{
+	0%{display: block !important;}
+	100%{display: none !important;}
 }

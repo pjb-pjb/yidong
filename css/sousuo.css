@@ -5,10 +5,11 @@
 	margin: 0 auto;
 }
 .sousuo .left{
+	position: relative;
 	float: left;
 	height: 100%;
 }
-.sousuo .left a{
+.sousuo .left>a{
 	float: left;
 }
 .sousuo .left img{
@@ -26,6 +27,80 @@
 	font-size: 16px;
 	line-height: 18px;
 	background: url(../img/sousuo/sousuo3.png) no-repeat right center;
+}
+.DivCity{
+	width: 540px;
+	padding: 10px 20px;
+	z-index: 100;
+	min-width: 160px;
+	background: #fff;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	position: absolute;
+	top: 60px;
+	left: 263px;
+	margin: 2px 0 0;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 4px;
+}
+.DivCity li{
+	overflow: hidden;
+	font-size: 12px;
+	padding: 5px 0;
+	text-align: left;
+}
+.DivCity dl{
+	overflow: hidden;
+}
+.DivCity dt{
+	float: left;
+	height: 12px;
+	width: 40px;
+	padding: 0 0 0 10px;
+	border-left: 3px solid #e50075;
+}
+.DivCity dt span{
+	display: block;
+	margin-top: -2px;
+}
+.DivCity dd{
+	float: left;
+	padding: 0;
+	width: 90%;
+	margin-top: -6px;
+	font-size: 12px;
+	line-height: 24px;
+}
+.DivCity dd a{
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	color: #666; 
+	padding: 0 5px;
+}
+#DivCity{
+	display: none;
+}
+#divdishi{
+	display: none;
+}
+#divdishi dd{
+	width: 100%;
+}
+#divdishi span{
+	float: left;
+}
+#divdishi>li>a{
+	color: #0085d0;
+	float: left;
+	font-weight: bold;
+	padding: 0 20px;
+	display: block;
+	white-space: nowrap;
+}
+.DivCity a:hover{
+	color: #0085d0 !important;
 }
 .sousuo .right{
 	float: right;

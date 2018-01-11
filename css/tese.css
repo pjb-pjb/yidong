@@ -62,6 +62,7 @@
 	color: #666;
 }
 .gonggao ul{
+	overflow: hidden;
 	float: left;
 	width: 1000px;
 }
@@ -149,4 +150,8 @@
     width: 120px;
     padding-left: 10px;
     color: #d5cccc;
+}
+.dongtai li a:hover{
+	transition: all .25s;
+	color: #3EB4FA;
 }

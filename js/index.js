@@ -189,23 +189,13 @@ $(function() {
 	}, 2000);
 	left.onclick = function() {
 		x=0;
-//		clearInterval(time);
 		n--;
 		yidong();
-//		time = setInterval(function() {
-//			n--;
-//			yidong();
-//		}, 2000);
 	}
 	right.onclick = function() {
 		x = 1;
-//		clearInterval(time);
 		n++;
 		yidong();
-//		time = setInterval(function() {
-//			n++;
-//			yidong();
-//		}, 2000);
 	}
 	small.onmouseover=function(){
 		console.log(x);
@@ -213,45 +203,18 @@ $(function() {
 	}
 	small.onmouseout=function(){
 		if(x == 0) {
-//			console.log(1);
 			time = setInterval(function() {
 				n--;
 				yidong();
 			}, 2000);
 				}
 		if(x == 1) {
-//			console.log(2);
 			time = setInterval(function() {
 			n++;
 			yidong();
 			}, 2000);
 		}
 	}
-//	let list1 = document.querySelectorAll(".yh .big li");
-//	console.log(list1);
-//	list1.forEach(
-//		(val, index) => {
-//			val.onmouseleave = function() {
-//				clearInterval(time);
-//			}
-//			val.onmouseout = function() {
-//				if(x == 0) {
-////					console.log(1);
-//					time = setInterval(function() {
-//						n--;
-//						yidong();
-//					}, 2000);
-//				}
-//				if(x == 1) {
-////					console.log(2);
-//					time = setInterval(function() {
-//						n++;
-//						yidong();
-//					}, 2000);
-//				}
-//			}
-//		}
-//	);
 }); 
 {
 	let list = document.querySelectorAll(".fixed li");
@@ -287,12 +250,6 @@ $(function() {
 				document.body.scrollTop = height;
 			}, 30);
 		}
-		//		ele.onmouseover=function(){
-		//			span[index].style.display="block";
-		//		}
-		//		ele.onmouseout=function(){
-		//			span[index].style.display="none";
-		//		}
 	});
 	window.onscroll = function() {
 		if(document.body.scrollTop >= 595) {
@@ -323,4 +280,123 @@ $(function() {
 			}
 		}
 	}
+}
+{
+	let liuliang=document.querySelector("#liuliang");
+	liuliang.onfocus=function(){
+		liuliang.placeholder="";
+	}
+	liuliang.onblur=function(){
+		liuliang.placeholder="流量";
+	}
+}
+{
+	let left=document.querySelector(".gonggao .btn-left");
+	let right=document.querySelector(".gonggao .btn-right");
+	let big=document.querySelector(".gonggao ul");
+	let n=0;
+	let flag=0;
+	function move(){
+		let list=document.querySelectorAll(".gonggao li");
+		let list1=Array.from(list);
+		if(flag==0){
+			big.appendChild(list[0]);
+		}
+		if(flag==1){
+			big.insertBefore(list[4],list[0]);
+		}
+	}
+	left.onclick=function(){
+		
+		flag=1;
+		move();
+	}
+	right.onclick=function(){
+		flag=0;
+		move();
+	}
+	let time=setInterval(function(){
+		flag=0;
+		move();
+	},2000);
+	big.onmouseenter=function(){
+		clearInterval(time);
+	}
+	big.onmouseleave=function(){
+		time=setInterval(function(){
+			flag=0;
+			move();
+		},2000);
+	}
+}
+{
+	let addres=document.querySelector("#address");
+	let city=document.querySelector("#DivCity");
+	let dishi=document.querySelector("#divdishi");
+	let fanhui=document.querySelector("#fanhui");
+	let sf=document.querySelector("#sf");
+	let flag=0;
+	addres.onclick=function(){
+		city.style.display="none";
+		dishi.style.display="block";
+	}
+	fanhui.onclick=function(){
+		city.style.display="block";
+		dishi.style.display="none";
+	}
+	city.onclick=function(e){
+		console.log(e.target.nodeName);
+		if(e.target.nodeName=="A"){ 
+			let text=e.target.innerHTML;
+			city.style.display="none";
+			dishi.style.display="block";
+			sf.innerHTML=text;
+			flag=1;
+		}
+	}
+	window.onclick=function(e){
+		console.log(e.target.id);
+		if(e.target.id!=="address"&&e.target.id!=="fanhui"&&flag==0){
+			flag=0;
+			city.style.display="none";
+			dishi.style.display="none";
+		}
+		flag=0;
+	}
+}
+{
+	let bar=document.querySelector(".bar");
+	let list=document.querySelectorAll(".bar .aside1 li");
+	let list1=document.querySelectorAll(".navbox");
+	let list3;
+//	let time=null;
+	list.forEach(function(ele,index){
+		list1[index].onmouseenter=ele.onmouseenter=function(){
+			clearInterval(time);
+			for(let i=0;i<list.length;i++){
+				list1[i].style.display="none";
+				list[i].style.width="";
+				list[i].classList.remove("boder");
+			}
+			list[index].classList.add("boder");
+			list1[index].style.display="block";	
+			ele.style.width="234px";
+			list3=list1[index];
+		}
+		list1[index].onmouseleave=ele.onmouseleave=function(){
+//			setTimeout(function(){
+//				list1[index].style.display="none";
+//				list[index].style.width="";		
+//				list[index].classList.remove("boder");
+//			},500);
+		}
+	});
+	bar.onmouseleave=bar.onmouseenter=function(){
+		time=setTimeout(function(){
+			console.log(list3);
+			list3.style.display="none";
+			list3.style.width="";
+		},500);
+	}
+
 }
