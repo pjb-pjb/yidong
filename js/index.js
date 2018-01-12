@@ -2,7 +2,6 @@
 	let banner = document.querySelector(".f5-bar");
 	let list = document.querySelectorAll(".f5-bar>li");
 	let yuan = document.querySelectorAll(".f5-bar .yuan li");
-	console.log(yuan);
 	let n = 0;
 	banner.onmouseover = function() {
 		clearInterval(time2);
@@ -81,7 +80,6 @@
 		let right = btn[1];
 		let list = val.querySelectorAll(".f5 .small1");
 		let num = val.querySelector(".f5 .title em");
-		console.log(num);
 		Tz(list, left, right, num);
 	});
 } {
@@ -151,7 +149,6 @@ $(function() {
 	let n = 0;
 	let x = 1;
 	let size1 = list.length;
-	console.log(list);
 	for(let i = 0; i < list.length; i++) {
 		var listNew = list[i].cloneNode(true);
 		big.appendChild(listNew);
@@ -355,7 +352,6 @@ $(function() {
 		}
 	}
 	window.onclick=function(e){
-		console.log(e.target.id);
 		if(e.target.id!=="address"&&e.target.id!=="fanhui"&&flag==0){
 			flag=0;
 			city.style.display="none";
@@ -369,10 +365,31 @@ $(function() {
 	let list=document.querySelectorAll(".bar .aside1 li");
 	let list1=document.querySelectorAll(".navbox");
 	let list3;
-//	let time=null;
+	let list4;
+	let time;
+	let flag=0;
+	let info=document.querySelector("#info");
+	info.onmouseenter=function(){
+		time=setTimeout(function(){
+			if(list3!==undefined){
+				list3.style.display="none";
+				list4.style.width="";
+				list4.classList.remove("boder");
+			}
+		},500);
+	}
+	bar.onmouseleave=function(){
+		time=setTimeout(function(){
+			if(list3!==undefined){
+				list3.style.display="none";
+				list4.style.width="";
+				list4.classList.remove("boder");
+			}
+		},500);
+	}
 	list.forEach(function(ele,index){
 		list1[index].onmouseenter=ele.onmouseenter=function(){
-			clearInterval(time);
+			clearTimeout(time);
 			for(let i=0;i<list.length;i++){
 				list1[i].style.display="none";
 				list[i].style.width="";
@@ -382,21 +399,24 @@ $(function() {
 			list1[index].style.display="block";	
 			ele.style.width="234px";
 			list3=list1[index];
+			list4=ele;
 		}
 		list1[index].onmouseleave=ele.onmouseleave=function(){
-//			setTimeout(function(){
-//				list1[index].style.display="none";
-//				list[index].style.width="";		
-//				list[index].classList.remove("boder");
-//			},500);
 		}
 	});
-	bar.onmouseleave=bar.onmouseenter=function(){
-		time=setTimeout(function(){
-			console.log(list3);
-			list3.style.display="none";
-			list3.style.width="";
-		},500);
+}
+{
+	let liuliang=document.querySelector("#liuliang1");
+	let huafei=document.querySelector("#huafei");
+	let price=document.querySelector("#price-1");
+	liuliang.onclick=function(){
+		liuliang.classList.add("color");
+		huafei.classList.remove("color");
+		price.style.display="none";
 	}
-
+	huafei.onclick=function(){
+		liuliang.classList.remove("color");
+		huafei.classList.add("color");
+		price.style.display="block";
+	}
 }
